@@ -33,7 +33,7 @@ def start(update,context):
   context.bot.send_message(chat_id=update.effective_chat.id, text=start_message)
 ADAFRUIT_IO_USERNAME = "Your_AIO_Username"
 ADAFRUIT_IO_KEY = "Your_AIO_Key"
-TOKEN = "Your_token"
+TOKEN = "Your_token" #you find your token in the BotFather in the telegram.
 aio = Client(ADAFRUIT_IO_USERNAME,ADAFRUIT_IO_KEY)
 updater=Updater('Your_token',use_context=True)
 dispatcher = updater.dispatcher
